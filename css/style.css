@@ -57,7 +57,12 @@ li{
   left: 20px;
 }
 
-.nav__bar > ul {
+.nav__bar > a {
+  display: block;
+  height: 100%;
+}
+
+.nav__bar  ul {
   display: none;
 }
 
@@ -327,15 +332,24 @@ li{
   justify-content: space-evenly;
 } 
 
+.slide_imgs > ul > li {
+  margin-right: 10px;
+  flex: 1;
+}
+
 
 .slide_banner > .slide_imgs a{
   display: block;
-  width: 500px;
-  height: 100px;
   background-color: white;
+  padding: 10px 0;
 }
 
 .slide_banner > .slide_imgs  img {
+  /* width: 100%; */
+  display: block;
+  width: auto;
+  height: 56px;
+  margin: 0 auto;
 }
 
 
@@ -408,6 +422,11 @@ li{
   background-color: #fdf5f4;
   padding-top: 45px;
   width: 100%;
+}
+
+.seoul_mayor > a > img {
+  width: 100%;
+
 }
 
 
@@ -492,6 +511,12 @@ li{
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  text-align: center;
+}
+
+.news_menu > ul > li{
+  background-position: center 0px !important;
+  margin: 15px 0;
 }
 
 .news_menu > ul > .menu_house{
@@ -544,7 +569,7 @@ li{
 
 .news_menu > ul > li > a {
   display: block;
-  padding: 20px 0;
+  padding-top: 62px;
   
 }
 
@@ -929,4 +954,191 @@ li{
   height: 1.5rem;
   text-indent: -9999px;
   cursor: pointer;
+}
+
+
+/* footer */
+
+.footer {
+  width: 100%;
+}
+
+.footer > .sns {
+  border-bottom: 1px solid #ededed;
+  padding-bottom: 5px;
+  margin: 10px 0;
+}
+
+.footer > .sns > ul {
+  display: flex;
+  justify-content: center;
+}
+
+.sns > ul > li {
+  padding: 5px;
+}
+
+.sns > ul > .facebook > a{
+  display: block;
+  background: url(../imgs/icon/icon_set_sns.png) no-repeat;
+  text-indent: -9999px;
+  width: 25px;
+  height: 25px;
+  background-size: 150px 25px;
+}
+
+.sns > ul > .twiter > a{
+  display: block;
+  background: url(../imgs/icon/icon_set_sns.png) no-repeat -25px;
+  text-indent: -9999px;
+  width: 25px;
+  height: 25px;
+  background-size: 150px 25px;
+}
+
+.sns > ul > .insta > a{
+  display: block;
+  background: url(../imgs/icon/icon_set_sns.png) no-repeat -50px;
+  text-indent: -9999px;
+  width: 25px;
+  height: 25px;
+  background-size: 150px 25px;
+}
+
+.sns > ul > .kakao > a{
+  display: block;
+  background: url(../imgs/icon/icon_set_sns.png) no-repeat -75px;
+  text-indent: -9999px;
+  width: 25px;
+  height: 25px;
+  background-size: 150px 25px;
+}
+
+.sns > ul > .yutube > a{
+  display: block;
+  background: url(../imgs/icon/icon_set_sns.png) no-repeat -100px;
+  text-indent: -9999px;
+  width: 25px;
+  height: 25px;
+  background-size: 150px 25px;
+}
+
+.sns > ul > .blog > a{
+  display: block;
+  background: url(../imgs/icon/icon_set_sns.png) no-repeat -125px;
+  text-indent: -9999px;
+  width: 25px;
+  height: 25px;
+  background-size: 150px 25px;
+}
+
+
+.footer_inner > ul {
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  margin-bottom: 20px;
+}
+
+.footer_inner > ul > li::after {
+  content: "|";
+  padding: 0 10px;
+}
+
+.footer_inner > ul > li:last-child:after{
+  content: none;
+}
+
+.footer_inner > ul > li:nth-child(2) {
+  font-weight: 600;
+}
+
+
+.pc_link {
+  display: flex;
+  justify-content: center;
+}
+
+.pc_link > a {
+  display: block;
+  width: 410px;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.pc_link > button {
+  background: url(../imgs/icon/btn_top.png) no-repeat center;
+  width: 25px;
+  height: 25px;
+  text-indent: -9999px;
+  background-size: 30px;
+  border: 1px solid gray;
+  cursor: pointer;
+}
+
+.translate {
+  display: flex;
+  justify-content: center;
+  border-bottom: 1px solid #dedede;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.translate > ul {
+  width: 410px;
+  border: 1px solid gray;
+  text-align: center;
+}
+
+.translate > button {
+  width: 25px;
+  background-color: #1e6cb3;
+  color: white;
+}
+
+.translate > ul > li > a {
+  display: block;
+}
+
+.translate > ul > li {
+  display: none;
+}
+
+.translate > ul > .english {
+  background: url(../imgs/icon/bg_select.png) no-repeat 95%;
+  background-size: 12px;
+  display: block;
+}
+
+
+.footer_address {
+  text-align: center;
+  font-size: 12px;
+}
+
+.footer_address > address {
+  display: block;
+  font-style: normal;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer_address > span {
+  display: block;
+}
+
+.seoul_number > span > a {
+  display: inline-block;
+  background: url(../imgs/icon/icon_chatbot.png) no-repeat 7px;
+  background-size: 15px;
+  border: 1px solid #dedede;
+  border-radius: 20px;
+  padding: 3px 10px 3px 28px;
+  color: #1e6cb3;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.footer_address > div:last-child {
+  margin-bottom: 20px;
 }
