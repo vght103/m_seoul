@@ -631,6 +631,12 @@ li{
   width: 100%;
 }
 
+.event_list > ul > li{
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
 
 .monthly_event {
   width: 50%;
