@@ -1,0 +1,52 @@
+@media screen and (max-width:1040px){
+  .slide_banner ul > li:last-child{
+    display: none;
+  }
+}
+
+@media screen and (max-width:940px){
+  .seoul_nesw-wrap{
+    display: block;
+  }
+  .seoul_mayor,
+  .seoul_news{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:768px){
+  .seoul_issue{
+    display: block;
+  }
+  .seoul_video figcaption{
+    color: black;
+    background-color: white;
+    white-space: normal;
+    overflow: none;
+    width: 55%;
+    top: 30%;
+    left: 45%;
+  }
+
+  .seoul_video img {
+    width: 40%;
+  }
+
+
+  .common_service li {
+    width: 50% !important;
+  }
+  .common_service li a{
+    width: 100%;
+  }
+}
+
+@media screen and (max-width:675px){
+  .slide_banner ul > li{
+    display: none;
+  }
+
+  .slide_banner ul > li:first-child{
+    display: block;
+  }
+}
