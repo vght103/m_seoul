@@ -32,14 +32,22 @@
     white-space: normal;
     overflow: none;
     width: 55%;
-    top: 30%;
+    top: 50%;
     left: 45%;
+    bottom: auto;
+    transform: translateY(-50%);
   }
 
   .seoul_video img {
     width: 40%;
   }
 
+
+  .seoul_small-news > ul > li{
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+  }
 
   .common_service li {
     width: 50% !important;
@@ -57,4 +65,20 @@
   .slide_banner ul > li:first-child{
     display: block;
   }
+}
+
+
+@media screen and (max-width:480px){
+  .seoul_video figcaption{
+    font-size: 12px;
+    transform: translateY(-50%);
+  }
+
+  .footer_inner{
+    font-size: 11px;
+}
+
+.footer_inner > ul {
+  font-size: 11px;
+  letter-spacing: -2px;
 }

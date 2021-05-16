@@ -1035,6 +1035,7 @@ li{
 
 .footer {
   width: 100%;
+  text-align: center;
 }
 
 .footer > .sns {
@@ -1107,6 +1108,10 @@ li{
 }
 
 
+.footer_inner {
+  display: inline-block;
+}
+
 .footer_inner > ul {
   display: flex;
   justify-content: center;
@@ -1115,9 +1120,13 @@ li{
   flex-wrap: wrap;
 }
 
+.footer_inner > ul > li{
+  /* flex: 1; */
+}
+
 .footer_inner > ul > li::after {
   content: "|";
-  padding: 0 10px;
+  padding: 0 5px;
 }
 
 .footer_inner > ul > li:last-child:after{
@@ -1131,14 +1140,16 @@ li{
 
 .pc_link {
   display: flex;
-  justify-content: center;
+  line-height: 23px;
+  margin-bottom: 5px;
 }
 
 .pc_link > a {
   display: block;
-  width: 410px;
+  width: 100%;
   border: 1px solid gray;
   text-align: center;
+
 }
 
 .pc_link > button {
@@ -1154,21 +1165,26 @@ li{
 .translate {
   display: flex;
   justify-content: center;
-  border-bottom: 1px solid #dedede;
-  padding-bottom: 20px;
+
   margin-bottom: 20px;
+  line-height: 23px;
 }
 
 .translate > ul {
-  width: 410px;
+  width: 100%;
   border: 1px solid gray;
   text-align: center;
+  
 }
 
 .translate > button {
   width: 25px;
+  height: 25px;
   background-color: #1e6cb3;
   color: white;
+  border: none;
+  font-size: 12px;
+
 }
 
 .translate > ul > li > a {
@@ -1189,6 +1205,8 @@ li{
 .footer_address {
   text-align: center;
   font-size: 12px;
+  border-top: 1px solid #dedede;
+  padding-top: 20px;
 }
 
 .footer_address > address {
