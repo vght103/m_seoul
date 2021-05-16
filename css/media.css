@@ -8,9 +8,17 @@
   .seoul_nesw-wrap{
     display: block;
   }
-  .seoul_mayor,
+  .seoul_mayor{
+    width: 100%;
+    padding: 0;
+  }
+
   .seoul_news{
     width: 100%;
+  }
+  .seoul_mayor img {
+    width: 90% !important; 
+    height: auto !important;
   }
 }
 

@@ -45,22 +45,24 @@ li{
 .header__logo > h1 > a {
   display: block;
   background: url(../imgs/logo_m.png) no-repeat;
-  width: 195px;
-  height: 37px;
+  width: 125px;
+  height: 23px;
+  background-size: 120px;
   text-indent: -9999px;
   margin: 0 auto;
 }
 
 .nav__bar > button{
-  background: url(../imgs/icon/icon_menu.png) no-repeat;
+  background: url(../imgs/icon/icon_menu.png) no-repeat center center;
   width: 42px;
   height: 31px;
   position: absolute;
-  top: 25px;
-  left: 20px;
+  top: 15px;
+  left: 5px;
   border: none;
   text-indent: -9999px;
   cursor: pointer;
+  background-size: 20px;
 }
 
 
@@ -92,7 +94,7 @@ li{
   width: 100%;
   background-color: white;
   border-radius: 5px;
-
+  position: relative;
 }
 
 .search__bar {
@@ -112,13 +114,17 @@ li{
 
 .search__btn {
   width: 10%;
+  position: absolute;
+  right: 0;
+  top: 3px;
 }
 
 .search__btn > button {
-  background: url(../imgs/icon/icon_magnify.png) no-repeat 10px 5px;
+  background: url(../imgs/icon/icon_magnify.png) no-repeat center center;
   width: 40px;
   height: 40px;
   border: none;
+  background-size: 20px;
   text-indent: -9999px;
 }
 
@@ -133,11 +139,12 @@ li{
 
 .inner__1 > .covid_19 {
   background: url(../imgs/bg_corona_mo_210409.gif) no-repeat center;
-  width: 100%;
+  background-size: cover;
+  /* width: 100%;
   height: 200px;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: center; */
 
 }
 
@@ -429,20 +436,20 @@ li{
 .seoul_nesw-wrap {
   display: flex;
   justify-content: center;
-
+  align-items: flex-end;
 }
 
 .seoul_mayor {
   width: 50%;
   text-align: center;
   background-color: #fdf5f4;
-  padding-top: 25px;
+  padding-top: 60px;
 }
 
 .seoul_mayor > a {
   display: block;
   background-color: #fdf5f4;
-  padding-top: 45px;
+  padding-top: 10px;
   width: 100%;
 }
 
@@ -469,6 +476,9 @@ li{
 
 .seoul_news li {
   padding: 5px 0 5px 5px;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
 }
 
 .seoul_news .news_culture {
@@ -949,6 +959,10 @@ li{
 .slide_count > li:first-child::after {
   content: "/";
   padding: 0 5px;
+}
+
+.sub_btn li > button{
+  border: 1px solid gray;
 }
 
 .slide-prev > button {
