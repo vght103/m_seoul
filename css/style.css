@@ -140,11 +140,11 @@ li{
 .inner__1 > .covid_19 {
   background: url(../imgs/bg_corona_mo_210409.gif) no-repeat center;
   background-size: cover;
-  /* width: 100%;
-  height: 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center; */
+  /* width: 100%; */
+  height: 160px;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
 
 }
 
@@ -154,58 +154,83 @@ li{
 }
 
 .covid_live {
-  padding-top: 60px;
-  position: relative;
-  width: 395px;
-  height: 90px;
   display: flex;
-  justify-content: space-around;
-}
-
-.covid_vaccine {
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-around; */
-  padding: 57px 0 0 10px;
   position: relative;
-  width: 395px;
-  height: 100px;
-
+  text-align: center;
+  font-size: 13px;
+  width: 315px;
+  margin: 0 auto;
+  padding-top: 48px;
 }
 
-.covid_vaccine span {
-  padding-right:53px;
+.covid_live span {
+  flex: 1;
 }
-
-.covid_vaccine .vaccine_1 span:nth-child(2),
-.covid_vaccine .vaccine_2 span:nth-child(2){
-  padding-right: 85px;
-}
-
-.covid_vaccine .vaccine_2 span:nth-child(3){
-  padding-right: 65px;
-}
-
-.covid_vaccine span:last-child {
-  margin: 0;
-  padding: 0;
-}
-
 
 .covid_19  .covid_live > .covid_date {
   font-size: 12px;
   color: black;
   position: absolute;
-  top: 10px;
-  left: 120px;
+  top: 5px;
+  left: 90px;
+  padding: 0;
 }
+
+
+
+.covid_vaccine {
+  position: relative;
+  font-size: 13px;
+  text-align: center;
+  width: 315px;
+  margin: 0 auto;
+  padding-top: 52px;
+}
+
+.covid_vaccine > .vaccine_1 {
+  position: absolute;
+  left: 8px;
+}
+
+.vaccine_1 > span:first-child{
+  margin-right: 35px;
+}
+
+.vaccine_1 > span:nth-child(2){
+  margin-right: 60px;
+}
+
+.vaccine_1 > span:nth-child(3){
+  margin-right: 35px;
+}
+
+.covid_vaccine > .vaccine_2 {
+  position: absolute;
+  top: 70px;
+  left: 8px;
+}
+
+.vaccine_2 > span:first-child{
+  margin-right: 35px;
+}
+
+.vaccine_2 > span:nth-child(2){
+  margin-right: 67px;
+}
+
+.vaccine_2 > span:nth-child(3){
+  margin-right: 43px;
+}
+
+
+
 
 .covid_19  .covid_vaccine > .covid_date{
   font-size: 12px;
   color: black;
   position: absolute;
-  top: 8px;
-  left: 120px;
+  top: 10px;
+  left: 85px;
 }
 
 
@@ -242,9 +267,10 @@ li{
 }
 
 .tab_1 i {
-  background: url(../imgs/icon/ico_main_new.png) no-repeat -5px;
+  background: url(../imgs/icon/ico_main_new.png) no-repeat -2px;
   width: 40px;
   height: 40px;
+  background-size: 130px;
   display: inline-block;
   background-color: white;
   border-radius: 50%;
@@ -260,9 +286,10 @@ li{
 }
 
 .tab_2 i {
-  background: url(../imgs/icon/ico_main_new.png) no-repeat -54px;
+  background: url(../imgs/icon/ico_main_new.png) no-repeat -44px;
   width: 40px;
   height: 40px;
+  background-size: 130px;
   display: inline-block;
   background-color: white;
   border-radius: 50%;
@@ -461,7 +488,7 @@ li{
 
 .seoul_news {
   width: 50%;
-  margin-left: 10px;
+  padding: 10px;
   font-size: 13px;
   position: relative;
 }
@@ -639,6 +666,7 @@ li{
 
 .event_list {
   width: 100%;
+  padding: 10px;
 }
 
 .event_list > ul > li{
@@ -676,28 +704,28 @@ li{
   font-size: 13px;
   font-weight: 600;
   color: #9b64d3;
-  padding: 5px 10px;
+  padding: 5px 5px 0 0;
 }
 
 .event_list .event_{
   font-size: 13px;
   font-weight: 600;
   color: #9b64d3;
-  padding: 5px 10px;
+  padding: 5px 5px 0 0;
 }
 
 .event_list .event_environment{
   font-size: 13px;
   font-weight: 600;
   color: #599100;
-  padding: 5px 10px;
+  padding: 5px 5px 0 0;
 }
 
 .event_list .event_eco{
   font-size: 13px;
   font-weight: 600;
   color: #069363;
-  padding: 0 10px;
+  padding: 5px 5px 0 0;
 }
 
 /* section_5 */
@@ -731,22 +759,22 @@ li{
 
 .main_service-wrap > .main_service {
   display: flex;
+  padding: 0 10px;
 }
 
 .main_service > .service_1 {
   width: 50%;
-  margin-left: 5px;
+  margin-right: 5px;
 }
 
 .main_service > .service_2 {
   width: 50%;
-  margin-right: 5px;
 }
 
 .main_service > .service_1 > li {
   border-radius: 10px;
   padding: 5px 0;
-  margin: 0 0 8px 8px;
+  margin: 0 0 8px 0;
   background: url(../imgs/icon/bg_arr_right01.png) no-repeat 95%  #ebebeb;
   background-size: 5px;
 }
@@ -754,7 +782,7 @@ li{
 .main_service > .service_2 > li {
   border-radius: 5px;
   padding: 5px 0;
-  margin: 0 0 8px 8px;
+  margin: 0 0 8px 0;
   background: url(../imgs/icon/bg_arr_right01.png) no-repeat 95%  #e4eaeb;
   background-size: 5px;
 }
@@ -767,7 +795,7 @@ li{
 
 
 .common_service {
-  padding: 15px
+  padding: 10px
 }
 
 
@@ -900,6 +928,7 @@ li{
 .seoul_issue > .seoul_small-news {
   flex: 1;
   font-size: 13px;
+  margin
 }
 
 .seoul_small-news > ul > li {
