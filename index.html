@@ -7,6 +7,11 @@
     <title>모바일-서울시청</title>
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/media.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"
+    />
   </head>
   <body>
     <header class="header">
@@ -14,11 +19,20 @@
         <h1><a href="#none">서울특별시</a></h1>
       </div>
 
+      <div class="search__area">
+        <div class="search__bar">
+          <input type="text" placeholder="검색어를 입력해주세요" />
+        </div>
+        <div class="search__btn">
+          <button type="submit">검색버튼</button>
+        </div>
+      </div>
       <nav class="nav__bar">
         <h2 class="text_blind">메인메뉴 버튼</h2>
         <button type="button">메뉴버튼</button>
         <div class="nav__menu">
           <ul>
+            <li><a href="#none">로그인</a></li>
             <li><a href="#none">나의서울</a></li>
             <li><a href="#none">전자우편</a></li>
             <li><a href="#none">서울소식</a></li>
@@ -31,14 +45,6 @@
           </ul>
         </div>
       </nav>
-      <div class="search__area">
-        <div class="search__bar">
-          <input type="text" placeholder="검색어를 입력해주세요" />
-        </div>
-        <div class="search__btn">
-          <button type="submit">검색버튼</button>
-        </div>
-      </div>
     </header>
 
     <main>
@@ -111,7 +117,7 @@
           </div>
           <div class="slide_banner">
             <div class="slide_imgs">
-              <ul>
+              <ul class="slide_action">
                 <li>
                   <a href="#none">
                     <img
@@ -136,14 +142,21 @@
                     />
                   </a>
                 </li>
+                <li>
+                  <a href="#none">
+                    <img
+                      src="imgs/main_banner/IMGBANNER_20210504205914_92837.jpg"
+                      alt="코로나19 예방접종, 사전예약 상담센터"
+                    />
+                  </a>
+                </li>
               </ul>
-
-              <div class="slide_btn">
+              <!-- <div class="slide_btn">
                 <button type="button" class="slide_prev">이전</button>
                 <button type="button" class="slide_stop">정지</button>
                 <button type="button" class="slide_play">재생</button>
                 <button type="button" class="slide_next">다음</button>
-              </div>
+              </div> -->
             </div>
           </div>
         </div>
@@ -553,4 +566,36 @@
       </div>
     </footer>
   </body>
+  <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+  <script
+    type="text/javascript"
+    src="http://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+  ></script>
+
+  <script>
+    $(".slide_action").slick({
+      slide: "li",
+      slidesToShow: 3,
+      slidesToScroll: 1,
+      autoplay: true,
+      autoplaySpeed: 4000,
+      responsive: [
+        {
+          breakpoint: 940,
+          settings: {
+            slidesToShow: 2,
+            slidesToScroll: 2,
+          },
+        },
+        {},
+        {
+          breakpoint: 650,
+          settings: {
+            slidesToShow: 1,
+            slidesToScroll: 1,
+          },
+        },
+      ],
+    });
+  </script>
 </html>

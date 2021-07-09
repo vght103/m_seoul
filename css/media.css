@@ -2,6 +2,10 @@
   .slide_banner ul > li:last-child{
     display: none;
   }
+
+  .nav__bar {
+    width: 100%;
+  }
 }
 
 @media screen and (max-width:940px){
