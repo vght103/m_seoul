@@ -19,22 +19,22 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__logo">
+      <div class="header_logo">
         <h1><a href="#none">서울특별시</a></h1>
       </div>
 
-      <div class="search__area">
-        <div class="search__bar">
+      <div class="search_area">
+        <div class="search_bar">
           <input type="text" placeholder="검색어를 입력해주세요" />
         </div>
-        <div class="search__btn">
+        <div class="search_btn">
           <button type="submit">검색버튼</button>
         </div>
       </div>
-      <nav class="nav__bar">
+      <nav class="nav_bar">
         <h2 class="text_blind">메인메뉴 버튼</h2>
         <button type="button">메뉴버튼</button>
-        <div class="nav__menu">
+        <div class="nav_menu">
           <ul>
             <li><a href="#none">로그인</a></li>
             <li><a href="#none">나의서울</a></li>
@@ -52,7 +52,7 @@
     </header>
 
     <main>
-      <section class="inner__1">
+      <section class="inner_1">
         <h2 class="text_blind">코로나19 확진자 및 예방접종 현황</h2>
         <div class="covid_19">
           <a href="#none">
@@ -84,10 +84,10 @@
         </div>
       </section>
 
-      <section class="inner__2">
+      <section class="inner_2">
         <h2 class="text_blind">서울특별시 소식</h2>
-        <div class="banner__area">
-          <div class="banner__tab">
+        <div class="banner_area">
+          <div class="banner_tab">
             <button type="button" class="tab_1">
               <i></i>
               <span>주요뉴스</span>
@@ -99,8 +99,8 @@
             </button>
           </div>
 
-          <div class="banner__bg">
-            <ul>
+          <div class="banner_bg">
+            <ul class="banner_bg-slide">
               <li>
                 <a href="#none">
                   <img
@@ -113,7 +113,7 @@
                 <a href="#none">
                   <img
                     src="imgs/main_banner/cad3a55748e64d39a3c69788b2d19e82.jfif"
-                    alt="수도권 거리두기 2단계 5월 23일까지 3주간 연장"
+                    alt="노동자가 안전하게 일할 수 있는 서울형 노동안전보건 우수기업을 모집합니다."
                   />
                 </a>
               </li>
@@ -121,7 +121,7 @@
                 <a href="#none">
                   <img
                     src="imgs/main_banner/d0cdf3a16d4e4f699a2c295f20e1568e.jfif"
-                    alt="수도권 거리두기 2단계 5월 23일까지 3주간 연장"
+                    alt="장애인 의류리폼 지원"
                   />
                 </a>
               </li>
@@ -129,7 +129,7 @@
                 <a href="#none">
                   <img
                     src="imgs/main_banner/ea7008cd557d4eabbc02468b11376ef6.jfif"
-                    alt="수도권 거리두기 2단계 5월 23일까지 3주간 연장"
+                    alt="플랫폼.프리랜서 노동자 소득세 신고 전 무료상담 지원"
                   />
                 </a>
               </li>
@@ -137,22 +137,28 @@
                 <a href="#none">
                   <img
                     src="imgs/main_banner/f806913a9be647d992cf8eef461d5959.jfif"
-                    alt="수도권 거리두기 2단계 5월 23일까지 3주간 연장"
+                    alt="코로나19 나의 백신 예방접종 장소는?"
                   />
                 </a>
               </li>
             </ul>
 
-            <div class="banner__control">
-              <div class="page_count">
+            <div class="banner_control">
+              <!-- <div class="page_count">
                 <span>1</span>
                 <span>5</span>
-              </div>
+              </div> -->
 
-              <div class="banner_btn">
+              <!-- <div class="banner_btn">
                 <button type="button" class="prev">이전</button>
                 <button type="button" class="stop">정지</button>
                 <button type="button" class="next">다음</button>
+              </div> -->
+
+              <div class="banner_btn">
+                <!-- <button type="button" class="prev">이전</button> -->
+                <button type="button" class="stop">정지</button>
+                <!-- <button type="button" class="next">다음</button> -->
               </div>
             </div>
           </div>
@@ -203,7 +209,7 @@
         </div>
       </section>
 
-      <section class="inner__3">
+      <section class="inner_3">
         <h2 class="text_blind">서울시청 새로운 소식</h2>
         <div class="seoul_nesw-wrap">
           <div class="seoul_mayor">
@@ -300,8 +306,8 @@
         </div>
       </section>
 
-      <section class="inner__4">
-        <div class="event__area">
+      <section class="inner_4">
+        <div class="event_area">
           <div class="event_btn">
             <div class="event_apply">
               <button type="button">이벤트 신청</button>
@@ -357,7 +363,7 @@
         </div>
       </section>
 
-      <section class="inner__5">
+      <section class="inner_5">
         <div class="main_service-wrap">
           <h2>주요서비스</h2>
           <a href="#none" class="more_site">전체사이트</a>
@@ -436,7 +442,7 @@
           </ul>
         </div>
       </section>
-      <section class="inner__6">
+      <section class="inner_6">
         <div class="weather">
           <div class="location">
             <span>중랑구</span>
@@ -458,7 +464,7 @@
         </div>
       </section>
 
-      <section class="inner__7">
+      <section class="inner_7">
         <h2 class="text_blind">새로운 서울시의 소식들</h2>
         <div class="seoul_issue">
           <div class="seoul_video">
@@ -614,12 +620,17 @@
   ></script>
 
   <script>
+    $(".banner_bg-slide").slick({
+      autoplay: true,
+      autoplaySpeed: 5000,
+    });
+
     $(".slide_action").slick({
-      slide: "li",
+      // slide: "li",
       slidesToShow: 3,
       slidesToScroll: 1,
       autoplay: true,
-      autoplaySpeed: 4000,
+      autoplaySpeed: 5000,
       responsive: [
         {
           breakpoint: 940,

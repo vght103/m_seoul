@@ -38,11 +38,11 @@ li{
   position: relative;
 }
 
-.header__logo {
+.header_logo {
   margin-bottom: 20px;
 }
 
-.header__logo > h1 > a {
+.header_logo > h1 > a {
   display: block;
   background: url(../imgs/logo_m.png) no-repeat;
   width: 125px;
@@ -52,11 +52,11 @@ li{
   margin: 0 auto;
 }
 
-.nav__bar {
+.nav_bar {
   position: relative;
 }
 
-.nav__bar > button{
+.nav_bar > button{
   background: url(../imgs/icon/icon_menu.png) no-repeat center center;
   width: 42px;
   height: 31px;
@@ -71,7 +71,7 @@ li{
 
 
 
-.nav__bar > .nav__menu {
+.nav_bar > .nav_menu {
   display: none;
   position: absolute;
   width: 100%;
@@ -81,7 +81,7 @@ li{
   z-index: 1;
 }
 
-.nav__menu > ul {
+.nav_menu > ul {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -89,7 +89,7 @@ li{
   width: 100%;
 }
 
-.nav__menu > ul >li {
+.nav_menu > ul >li {
   padding: 10px 5px;
   width: 100%;
   background-color: white;
@@ -97,14 +97,14 @@ li{
   
 }
 
-.nav__menu > ul >li > a {
+.nav_menu > ul >li > a {
   background-color: #f4f6f7;
   padding: 5px;
  
   
 }
 
-.search__area {
+.search_area {
   display: flex;
   width: 100%;
   background-color: white;
@@ -112,14 +112,14 @@ li{
   position: relative;
 }
 
-.search__bar {
+.search_bar {
   padding: 10px;
   outline: none;
   width: 100%;
   
 }
 
-.search__bar > input{
+.search_bar > input{
   width: 100%;
   border: none;
   padding: 3px 0;
@@ -127,14 +127,14 @@ li{
   
 }  
 
-.search__btn {
+.search_btn {
   width: 10%;
   position: absolute;
   right: 0;
   top: 3px;
 }
 
-.search__btn > button {
+.search_btn > button {
   background: url(../imgs/icon/icon_magnify.png) no-repeat center center;
   width: 40px;
   height: 40px;
@@ -147,12 +147,12 @@ li{
 
   /* 메인 영역 */
 
-.inner__1 {
+.inner_1 {
   width: 100%;
   margin-bottom: 10px;
 }
 
-.inner__1 > .covid_19 {
+.inner_1 > .covid_19 {
   background: url(../imgs/bg_corona_mo_210409.gif) no-repeat center;
   background-size: cover;
   /* width: 100%; */
@@ -163,7 +163,7 @@ li{
 
 }
 
-.inner__1 > .covid_19  a {
+.inner_1 > .covid_19  a {
   color: white;
   font-size: 14px;
 }
@@ -251,20 +251,20 @@ li{
 
 /* section 2 */
 
-/* .inner__2 {
+/* .inner_2 {
   margin-bottom: 50px;
 } */
 
-.banner__area {
+.banner_area {
   width: 100%;
 }
 
 
-.banner__tab {
+.banner_tab {
   display: flex;
 }
 
-.banner__tab > button {
+.banner_tab > button {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -312,16 +312,18 @@ li{
 }
 
 
-.banner__bg {
+.banner_bg {
   position: relative;
 }
 
 
-.banner__area > .banner__bg  img{
+
+
+.banner_area > .banner_bg  img{
   width: 100%;
 }
 
-.banner__control {
+.banner_control {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -357,7 +359,7 @@ li{
 }
 
 
-.banner_btn > .prev{
+/* .banner_btn > .prev{
   background: url(../imgs/icon/arr_slide_left.png) no-repeat 10px 3px;
   background-size: 7px auto;
   width: 17px;
@@ -365,6 +367,20 @@ li{
   text-indent: -9999px;
   border: none;
   cursor: pointer;
+} */
+
+.banner_bg-slide > .slick-prev{
+  background: url(../imgs/icon/arr_slide_left.png) no-repeat 10px 3px;
+  background-size: 7px auto;
+  width: 17px;
+  height: 17px;
+  text-indent: -9999px;
+  border: none;
+  cursor: pointer;
+  position: absolute;
+  bottom: 26px;
+  right: 100px;
+  z-index: 1;
 }
 
 .banner_btn > .stop{
@@ -377,7 +393,7 @@ li{
   cursor: pointer;
 }
 
-.banner_btn > .next{
+.banner_bg-slide > .slick-next{
   background: url(../imgs/icon/arr_slide_right.png) no-repeat 4px 3px;
   background-size: 7px auto;
   width: 17px;
@@ -385,7 +401,21 @@ li{
   text-indent: -9999px;
   border: none;
   cursor: pointer;
+  position: absolute;
+  bottom: 26px;
+  right: 42px;
+  z-index: 1;
 }
+
+/* .banner_btn > .next{
+  background: url(../imgs/icon/arr_slide_right.png) no-repeat 4px 3px;
+  background-size: 7px auto;
+  width: 17px;
+  height: 17px;
+  text-indent: -9999px;
+  border: none;
+  cursor: pointer;
+} */
 
 .slide_banner {
   /* width: 100%; */
@@ -439,7 +469,7 @@ li{
   cursor: pointer;
 } */
 
-.slick-prev {
+.slide_action > .slick-prev {
   background: url(../imgs/icon/s-ico-prev.png) no-repeat;
   width: 24px;
   height: 24px;
@@ -472,7 +502,7 @@ li{
   cursor: pointer;
 }
 
-.slick-next {
+.slide_action > .slick-next {
   background: url(../imgs/icon/s-ico-next.png) no-repeat;
   width: 24px;
   height: 24px;
@@ -497,7 +527,7 @@ li{
 
 /* section 3*/
 
-.inner__3 {
+.inner_3 {
   margin-bottom: 30px;
 }
 
@@ -603,7 +633,7 @@ li{
 }
 
 
-.inner__3 > .news_menu {
+.inner_3 > .news_menu {
   width: 100%;
 }
 
@@ -676,7 +706,7 @@ li{
 
 /* section 4 */
 
-.inner__4 {
+.inner_4 {
   margin-bottom: 30px;
 }
 
@@ -771,7 +801,7 @@ li{
 
 /* section_5 */
 
-.inner__5 {
+.inner_5 {
   margin-bottom: 30px;
   width: 100%;
   position: relative;
@@ -878,13 +908,13 @@ li{
 
 /* section_6 */
 
-.inner__6 {
+.inner_6 {
   width: 100%;
   position: relative;
   margin-bottom: 30px;
 }
 
-.inner__6 .weather {
+.inner_6 .weather {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -925,13 +955,13 @@ li{
 
 /* section_7 */
 
-.inner__7 {
+.inner_7 {
   width: 100%;
   margin-bottom: 30px;
   padding: 10px;
 }
 
-.inner__7 h3 {
+.inner_7 h3 {
   border-bottom: 1px solid #dedede;
   margin-bottom: 10px;
   padding-bottom: 10px;
